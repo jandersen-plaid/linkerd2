@@ -1,5 +1,3 @@
-ARG BUILDPLATFORM=linux/amd64
-
 # Precompile key slow-to-build dependencies
 FROM --platform=$BUILDPLATFORM golang:1.18-alpine as go-deps
 WORKDIR /linkerd-build
